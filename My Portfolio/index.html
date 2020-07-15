@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <title>Gitonga</title>
 </head>
 
@@ -43,7 +46,7 @@
             <div class="about-container">
                 <h2>About Me</h2>
                 <hr>
-                <div class="about-cont-2">
+                <div class="about-cont-2" data-aos="fade-left">
                     <img src="images/myphoto.JPG" alt="My photo">
                     <p id="intro">Fueled by the passion of evolving technology he works with an aim of making it
                         work with your lifestyle.
@@ -83,7 +86,7 @@
                 <div id="skills-2-tech">
                     <h3>Technical Skills</h3>
                     <ul>
-                        <li>Frontend web development using Html5, CSS3, Bootstrap and Javascript</li>
+                        <li>Frontend web development using HTML5, CSS3, Bootstrap and Javascript</li>
                         <li>Backend web devloploment using Php and Javascript</li>
                         <li>Android UI / UX using Xml</li>
                         <li>Android backend using Java</li>
@@ -94,11 +97,11 @@
             </div>
             <div class="skills-image-container">
                 
-                        <img src="images/android.png" alt="android">
-                        <img src="images/html.png" alt="html5">
-                        <img src="images/css.png" alt="css3">
-                        <img src="images/java.png" alt="java">
-                        <img src="images/js.png" alt="javascript">
+                        <img src="images/android.png" alt="android" data-aos="fade-down">
+                        <img src="images/html.png" alt="html5" data-aos="fade-down" data-aos-delay="500">
+                        <img src="images/css.png" alt="css3" data-aos="fade-down" data-aos-delay="1000">
+                        <img src="images/java.png" alt="java" data-aos="fade-down" data-aos-delay="1500">
+                        <img src="images/js.png" alt="javascript" data-aos="fade-down" data-aos-delay="2000">
             </div>
         </section>
 
@@ -136,19 +139,19 @@
             </div>
             <div class="contacts-container-2">
                 <div class="widgets">
-                    <div class="call-widget">
+                    <div class="call-widget" data-aos="fade-right">
                         <i class="fa fa-phone" aria-hidden="true" id="info-icon" style="color: #00c1c1; font-size: 80px;"></i>
                         <h3>Call</h3><br>
                         <p>+254 713 394 693</p>
                     </div>
 
-                     <div class="email-widget">
+                     <div class="email-widget"  data-aos="fade-down">
                         <i class="fa fa-envelope" aria-hidden="true" id="info-icon" style="color: #00c1c1; font-size: 80px;"></i>
                         <h3>Email</h3><br>
                         <p>iangitonga47@gmail.com</p>
                      </div>
                      
-                     <div class="location-widget">
+                     <div class="location-widget"  data-aos="fade-left">
                         <i class="fa fa-map-marker" aria-hidden="true" id="info-icon" style="color: #00c1c1; font-size: 80px;"></i>
                         <h3>Location</h3><br>
                         <p>Mombasa, Kenya</p>
@@ -177,6 +180,13 @@
     </div>
 
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 300,
+        duration: 1000
+    });
+  </script>
 </body>
 
 </html>
