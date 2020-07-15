@@ -123,21 +123,18 @@ hr{
   }
 
 .about-cont-2 #intro{
-    font-size: 23px;
-    position: relative;
+    font-size: 22px;
 }
 
 .about-cont-2 #mission{
     opacity: 0.5;
     font-style: italic;
-    font-size: 21px;
-    position: relative;
+    font-size: 20px;
 }
 
 .about-cont-2 #more{
     line-height: 1.5;
-    position: relative;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 /* ------- Skill section ------- */
