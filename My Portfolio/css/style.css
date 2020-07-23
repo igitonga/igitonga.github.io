@@ -95,7 +95,7 @@ hr{
 .about-container{
     margin: 50px 0px 80px 0px;
     padding: 80px;
-    height: 35vw;
+    height: 37vw;
     justify-content: center;
     align-items: center;
 }
@@ -103,17 +103,20 @@ hr{
 .about-container img{
     width: 380px;
     height: 370px;
-    float: left;
     margin-right:50px;
     margin-left: 10px;
+    border-radius: 50%;
 }
 
 .about-cont-2{ 
     margin-top: 50px;
     width: 60vw;
     margin-left: 150px;
-    height: 22vw;
+    height: 45vh;
     padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .about-cont-2 br {
@@ -136,6 +139,22 @@ hr{
 .about-cont-2 #more{
     line-height: 1.5;
     font-size: 18px;
+}
+
+.about-cont-2 .btn-resume{
+    border: #00c1c1 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    background: transparent;
+    text-decoration: none;
+    color:#00c1c1;
+    font-weight: bold;
+}
+
+.about-cont-2 .btn-resume:hover{
+    background-color: #00c1c1;
+    color: white;
+    cursor: pointer;
 }
 
 /* ------- Skill section ------- */
