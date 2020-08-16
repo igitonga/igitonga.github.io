@@ -68,7 +68,7 @@ hr{
 /* ------- Landing Page Image ------- */
 
 .image-container{
-    background-image: url('../images/land_screen.jpg');
+    background: linear-gradient( rgba(0,0,0,0.4), rgba(0, 0, 0, 0.4) ), url('../images/land_screen.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -178,7 +178,7 @@ hr{
 
 .skills-container{
     padding: 50px;
-    margin: 10px 0px 90px 0px;
+    margin: 10px 0px 0px 0px;
     height: 80vh;
     background-color: #f8f8f8;
     position: relative;
@@ -222,11 +222,10 @@ hr{
 }
 
 .skills-image-container{
-    margin: 40px 0px 30px 0px;
     padding: 50px;
     height: 29vw;
     text-align: center;
-    background-image: url(../images/skills_bg.jpg);
+    background:linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url(../images/skills_bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -245,7 +244,7 @@ hr{
 
 .projects-container{
     background-color: #f8f8f8;
-    margin: 70px 0px 50px 0px;
+    margin: 0px 0px 50px 0px;
     padding: 100px;
 
 }
@@ -312,6 +311,11 @@ hr{
     align-items: center;
 }
 
+.widgets i{
+    font-size: 80px;
+    color: #00c1c1;
+}
+
 .widgets p{
     font-size: 20px;
 }
@@ -371,4 +375,149 @@ footer{
     padding: 30px;
     margin-top: 30px;
     font-weight: bold;
+}
+
+
+/* Media Queries */
+@media screen and (max-width:480px){
+    /* General styling */
+    h2{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 19px;
+    }
+    body{
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Navigation bar */
+    .top-menubar-cont li a{
+        font-size: 11px;
+    }
+    /* Landing Page */
+    .image-container h1{
+        font-size: 50px;
+    }
+    .image-container p{
+        font-size: 20px;
+    }
+
+    /* About Section */
+    .about-container{
+        height: 110vh;
+        margin-bottom: 0;
+    }
+    .about-cont-2{
+        display: block;
+        margin-left: -40px;
+        margin-top: 30px;
+    }
+    .about-cont-2 img{
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
+    }
+    .about-cont-2 #intro{
+        font-size: 17px;
+    }
+    .about-cont-2 #mission{
+        font-size: 15px;
+    }
+    .about-cont-2 #more{
+        font-size: 13px;
+    }
+    .about-cont-2 .btn-resume{
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    /* Skills section */
+    .skills-container{
+        height: 105vh;
+        position: static !important;
+    }
+    .skills-container h3{
+        font-size: 19px;
+    }
+    #skills-1-prof{
+        margin-left: -15px;
+        font-size: 15px;
+        width: 90%;
+    }
+    #skills-2-tech{
+        margin-left: -15px;
+        margin-top: 10px;
+        font-size: 15px;
+        position: static;
+        width: 90%;
+    }
+   
+    .skills-image-container img{
+        width: 60px;
+        height: 40px;
+    }
+
+    /* Contact Section */
+    .contacts-container{
+        padding: 50px;
+    }
+    .contacts-container p{
+        font-size: 13px;
+    }
+    .contact-form input{
+        padding: 8px;
+        font-size: 15px;
+        width: 240px;
+    }
+    .contact-form input, ::-webkit-input-placeholder{
+        font-size: 15px;
+    }
+    .contact-form textarea{
+        font-size: 15px;
+        width: 240px;
+    }
+    .contact-form button{
+        width: 260px;
+        padding: 8px;
+        font-size: 13px;
+    }
+    .widgets{
+        display: block;
+        margin-top: -30px;
+    }
+    .widgets i{
+        font-size: 50px;
+    }
+    .widgets p{
+        font-size: 15px;
+    }
+    .widgets br {
+        content: "";
+        margin: 26px;
+        display: block;
+        font-size: 24%;
+    }
+    .widgets-2 h3{
+        font-size: 15px;
+    }
+    .contacts-container-2 .widgets-2 .social-media ul{
+        display: flex;
+        justify-content: center;
+        margin-right: 55px;
+    }
+    .contacts-container-2 .social-media .fa{
+        width: 50px;
+        font-size: 20px;
+    }
+    
+
+    /* Footer */
+    footer{
+        font-size: 11px;
+        padding: 20px;
+        margin-top: -10px;
+    }
 }
