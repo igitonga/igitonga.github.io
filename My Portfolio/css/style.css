@@ -234,12 +234,12 @@ hr{
     background-attachment: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .skills-image-container img{
-    width: 250px;
+    width: 230px;
     height: 190px;
 }
 
@@ -384,7 +384,7 @@ footer{
 /* Media Queries */
 
 /* Mobile view */
-@media screen and (max-width:480px){
+@media screen and (max-width:600px){
     /* General styling */
     h2{
         font-size: 26px;
@@ -489,7 +489,7 @@ footer{
     }
     .contact-form textarea{
         font-size: 15px;
-        width: 240px;
+        width: 241px;
     }
     .contact-form button{
         width: 260px;
@@ -531,6 +531,150 @@ footer{
     /* Footer */
     footer{
         font-size: 11px;
+        padding: 20px;
+        margin-top: -10px;
+    }
+}
+
+/* Tablet view */
+@media (min-width: 601px) and (max-width: 1024px){
+    /* General styling */
+    h2{
+        font-size: 29px;
+    }
+    h3{
+        font-size: 21px;
+    }
+    body{
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Navigation bar */
+    .top-menubar-cont li{
+        margin-right: 5px;
+    }
+    .top-menubar-cont li a{
+        font-size: 16px;
+    }
+    /* Landing Page */
+    .image-container h1{
+        font-size: 55px;
+    }
+    .image-container p{
+        font-size: 23px;
+    }
+
+    /* About Section */
+    .about-container{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    .about-cont-2{
+        display: block;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+    .about-cont-2 img{
+        width: 230px;
+        height: 230px;
+        margin-left: 0;
+    }
+    .about-cont-2 #intro{
+        font-size: 22px;
+    }
+    .about-cont-2 #mission{
+        font-size: 20px;
+    }
+    .about-cont-2 #more{
+        font-size: 18px;
+    }
+    .about-cont-2 .btn-resume{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    /* Skills section */
+    .skills-container{
+        height: 70vh;
+        position: static !important;
+    }
+    .skills-container h3{
+        font-size: 21px;
+    }
+    #skills-1-prof{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 17px;
+        width: 85%;
+    }
+    #skills-2-tech{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        font-size: 17px;
+        position: static;
+        width: 85%;
+    }
+    .skills-image-container img{
+        width: 100px;
+        height: 80px;
+    }
+
+    /* Contact Section */
+    .contacts-container p{
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    .contact-form input{
+        padding: 9px;
+        font-size: 17px;
+        width: 360px;
+    }
+    .contact-form input, ::-webkit-input-placeholder{
+        font-size: 17px;
+    }
+    .contact-form textarea{
+        font-size: 17px;
+        width: 361px;
+    }
+    .contact-form button{
+        width: 378px;
+        padding: 9px;
+        font-size: 17px;
+    }
+    .widgets i{
+        font-size: 60px;
+    }
+    .widgets p{
+        font-size: 17px;
+    }
+    .widgets br {
+        content: "";
+        margin: 26px;
+        display: block;
+        font-size: 24%;
+    }
+    .widgets-2 h3{
+        font-size: 17px;
+    }
+    .contacts-container-2 .widgets-2 .social-media ul{
+        margin-right: 45px;
+    }
+    .contacts-container-2 .widgets-2 .social-media li{
+        margin: 0px 10px;
+        line-height: px;
+        height: 50px;
+    }
+    .contacts-container-2 .social-media .fa{
+        width: 50px;
+        font-size: 24px;
+    }
+
+    /* Footer */
+    footer{
+        font-size: 14px;
         padding: 20px;
         margin-top: -10px;
     }
