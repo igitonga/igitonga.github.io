@@ -126,15 +126,15 @@
                     with
                     you.</p>
 
-                <form class="contact-form" id="contactForm">
+                <form method="POST" action="contact_handler.php" class="contact-form" id="contactForm">
                     
-                        <input type="text" placeholder="Your name" id="name" required><br>
+                        <input type="text" placeholder="Your name" id="name" name="name" required><br>
        
-                        <input type="email" placeholder="Your email" id="email" required><br>
+                        <input type="email" placeholder="Your email" id="email" name="email" required><br>
                         
-                        <input type="text" placeholder="Subject" id="subject" required><br>
+                        <input type="text" placeholder="Subject" id="subject" name="subject" required><br>
                        
-                        <textarea name="message" placeholder="Message" id="message" cols="42" rows="10" required></textarea><br>
+                        <textarea name="message" placeholder="Message" id="message" name="message" cols="42" rows="10" required></textarea><br>
                
                     <button type="submit" id="buSubmit">Send Message</button>
                 </form>
