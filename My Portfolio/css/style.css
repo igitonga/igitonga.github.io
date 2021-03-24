@@ -85,12 +85,12 @@ hr{
 .image-container h1{
     font-size: 70px;
     color: #ffffff;
-    text-align: center;
 }
 
 .image-container p{
     font-size: 30px;
     color: #ffffff;
+    text-align: center;
 }
 
 #name-title{
