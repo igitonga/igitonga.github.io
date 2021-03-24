@@ -249,7 +249,32 @@ hr{
     background-color: #f8f8f8;
     margin: 0px 0px 50px 0px;
     padding: 100px;
+}
 
+.card_deck{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2em;
+    margin-top: 40px;
+}
+
+.card_deck .card_1{
+    box-shadow: 0px 0px 10px #00c1c1; 
+}
+
+.card_deck .card_1 img{
+    height: 350px;
+    opacity: 250ms linear;
+}
+
+.card_deck .card_1:hover{
+    opacity: .55;
+}
+
+.card_deck .card_1 .txt{
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: .3em;
 }
 
 /* ------- Contact section ------- */
@@ -418,7 +443,7 @@ footer{
 
     /* About Section */
     .about-container{
-        height: 110vh;
+        height: 105vh;
         margin-bottom: 0;
     }
     .about-cont-2{
@@ -471,6 +496,20 @@ footer{
         height: 40px;
     }
 
+    /* project section */
+    .card_deck{
+        display: block;
+    }
+
+    .card_deck .card_1 img{
+        height: 150px;
+        max-width: 100%;
+    }
+
+    .card_deck .card_1 .txt{
+        font-size: .7em;
+    }
+
     /* Contact Section */
     .contacts-container{
         padding: 50px;
@@ -498,7 +537,7 @@ footer{
     }
     .widgets{
         display: block;
-        margin-top: -30px;
+        margin-top: -30p        x;
     }
     .widgets i{
         font-size: 50px;
@@ -620,6 +659,22 @@ footer{
     .skills-image-container img{
         width: 100px;
         height: 80px;
+    }
+
+    /* project section */
+    .card_deck{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1em;
+    }
+
+    .card_deck .card_1 img{
+        height: 250px;
+        max-width: 100%;
+    }
+
+    .card_deck .card_1 .txt{
+        font-size: .8em;
     }
 
     /* Contact Section */
