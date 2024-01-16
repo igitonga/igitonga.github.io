@@ -120,14 +120,6 @@ hr{
     align-items: center;
 }
 
-.about-container img{
-    width: 380px;
-    height: 370px;
-    margin-right:50px;
-    margin-left: 10px;
-    border-radius: 50%;
-}
-
 .about-cont-2{ 
     margin-top: 50px;
     width: 60vw;
@@ -137,6 +129,15 @@ hr{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.about-cont-2 img{
+    width: 380px;
+    height: 370px;
+    margin-right:50px;
+    margin-left: 10px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .about-cont-2 br {
@@ -365,24 +366,24 @@ a{
     font-size: 24%;
 }
 
-.contacts-container-2{
+.contacts-container{
     text-align: center;
     padding: 80px;
 }
 
-.contacts-container-2 .widgets-2{
+.contacts-container .widgets-2{
     padding: 20px;
     text-align: center;
     margin-top: 30px;
 }
 
-.contacts-container-2 .widgets-2 .social-media ul{
+.contacts-container .widgets-2 .social-media ul{
     display: flex;
     justify-content: center;
     margin-right: 45px;
 }
 
-.contacts-container-2 .widgets-2 .social-media li{
+.contacts-container .widgets-2 .social-media li{
     margin-top: 15px;
     list-style-type: none;
     margin: 0px 10px;
@@ -394,12 +395,12 @@ a{
     border-radius: 50%;
 }
 
-.contacts-container-2 .widgets-2 .social-media a{
+.contacts-container .widgets-2 .social-media a{
    color: #ffffff;
    font-size: 25px;
 }
 
-.contacts-container-2 .social-media li:hover{
+.contacts-container .social-media li:hover{
     background-color: #3a3a3a;
     cursor: pointer;
 }
